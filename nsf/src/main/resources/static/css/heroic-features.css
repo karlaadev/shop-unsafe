@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Integral CF';
+    src: url('fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff2') format('woff2'),
+        url('fonts/FONTSPRINGDEMO-IntegralCFMediumRegular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+
+  }
+
+  @font-face {
+    font-family: 'NeoGram';
+    src: url('/fonts/NeoGramTrial-DemiBoldExtended.woff2') format('woff2'),
+        url('/fonts/NeoGramTrial-DemiBoldExtended.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'EtruscoNowCondensed';
+    src: url('/fonts/EtruscoNowCondensed-Bold.woff2') format('woff2'),
+        url('/fonts/EtruscoNowCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'NeoGram Trial';
+    src: url('/fonts/NeoGramTrial-ExtraBoldExtended.woff2') format('woff2'),
+        url('/fonts/NeoGramTrial-ExtraBoldExtended.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'IntegralCFExtra';
+    src: url('/fonts/FONTSPRINGDEMO-IntegralCFExtraBoldRegular.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-IntegralCFExtraBoldRegular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+body {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    font-family: 'Integral CF';
+    margin: 0;
+    padding: 0;
+}
+/* Estilos generales para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: black; /* Color de fondo oscuro */
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo (lado izquierdo) */
+.navbar-brand img {
+    height: 70px; /* Tamaño ajustado del logo */
+}
+
+/* Buscador (centro) */
+/* Estilos para el formulario */
+.form-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Input de búsqueda */
+.form-inline .form-control {
+    background-color: rgba(255, 255, 255, 0.132); /* Fondo transparente */
+    border: 1px solid #01060253; /* Borde verde */
+    color: white; /* Texto blanco */
+    font-family: 'Integral CF'; /* Cambia 'Poppins' por la fuente que desees */
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Botón de búsqueda */
+.form-inline .btn {
+    font-family: 'Integral CF'; /* Fuente del botón */
+    font-size: 1rem;
+    padding: 5px 15px;
+    color: rgba(255, 255, 255, 0.522);
+    background-color: transparent; /* Fondo transparente */
+    display: flex;
+    border: 1px solid transparent;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.form-inline .btn:hover {
+    background-color: transparent;/* Fondo verde al pasar el cursor */
+    color: red; /* Color del texto blanco */
+}
+
+
+/* Íconos (lado derecho) */
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: red; /* Cambia el color al pasar el cursor */
+}
+
+.containerInicio{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.jumbotron {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem; /* Espaciado alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex; /* Flexbox solo para el jumbotron */
+    flex-direction: column; /* Asegura que el contenido esté en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: 50vh;
+
+
+
+}
+
+
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    color: #030303;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* Contenedor para las cartas */
+.containerProducts {
+    display: flex;
+    justify-content: space-between;  /* Alinea las cartas en una fila */
+    gap: 20px;  /* Espacio entre las cartas */
+    flex-wrap: wrap;  /* Permite que las cartas se ajusten en pantallas más pequeñas */
+    margin: 80px auto;
+    max-width: 100%;  /* Hace que el contenedor ocupe solo el 80% del ancho de la pantalla */
+  }
+
+  /* Estilo de cada carta */
+  .card {
+    width: 23%;  /* Cada carta ocupará aproximadamente el 23% del ancho del contenedor */
+    background-color: #2c2c2c;
+    border: 1px solid #2c2c2c;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;  /* Asegura que el contenido no se desborde */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;  /* Asegura que el contenido esté en columna (imagen, texto, botón) */
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card-footer .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .card-footer .btn:hover {
+    background-color: #d10006;
+  }
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- Navbar -->
+<div th:fragment="header">
+
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo (lado izquierdo) -->
+            <a class="navbar-brand" href="/">
+                <img src="/Imagenes/LOGO SIN CONTORNO BLANCO (1).png" alt="Logo">
+            </a>
+
+            <!-- Buscador (centro) -->
+            <form class="form-inline" method="post" action="#">
+                <input class="form-control" type="search" placeholder="Buscar producto" aria-label="Search" name="nombre" autocomplete="off">
+                <button class="btn" type="submit">
+                    <i class="fas fa-search"></i> <!-- Ícono de la lupa -->
+                </button>
+            </form>
+
+            <!-- Íconos (lado derecho) -->
+            <div class="d-flex">
+                <a class="nav-link" href="carrito.html">
+                    <i class="fas fa-shopping-cart"></i> <!-- Ícono del carrito -->
+                </a>
+                <a class="nav-link" href="login.html">
+                    <i class="fas fa-user"></i> <!-- Ícono de usuario/login -->
+                </a>
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+
+<!-- Footer -->
+<div th:fragment="footer">
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; UNSAFE SHOP 2024</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+</div>
+
