@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/heroic-features.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <title>UNSAFE SHOP</title>
+</head>
+<body>
+<!-- Navbar -->
+<div th:include="administrador/template_admin.html::header"></div>
+
+<!-- Page Content -->
+<div class="containerShow">
+
+
+  <!-- Page Heading/Breadcrumbs -->
+  <h1 class="tituloShow">Unsafe shop <small>Productos</small></h1>
+
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active">/ Ver Productos</li>
+  </ol>
+
+  <a class="btn btn-primary" href="#" > Crear Producto</a>
+  <h2>Productos</h2>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Descripción</th>
+      <th scope="col">Inventario</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Acción</th>
+      <th scope="col">Acción</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td><a  class="btn btn-warning" href="">Editar</a> </td>
+      <td><a  class="btn btn-danger" href="">Eliminar</a> </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<div th:include="administrador/template_admin.html::footer"></div>
+
+<!-- Bootstrap core JavaScript -->
+<script th:src="@{vendor/jquery/jquery.min.js}"></script>
+<script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+</body>
+
+</html>

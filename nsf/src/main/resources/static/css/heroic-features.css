@@ -48,7 +48,7 @@
 body {
     background-color: #000; /* Fondo negro */
     color: #fff; /* Texto blanco */
-    font-family: 'Integral CF';
+    font-family: 'Integral CF', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -217,3 +217,113 @@ body {
     background-color: #d10006;
   }
 
+
+
+
+ .containerShow{
+    margin: 0px 100px;
+ }
+
+.breadcrumb{
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    padding: 0;
+    background-color: rgba(251, 251, 251, 0.229); /* Color de fondo oscuro */
+    color: white;
+    list-style-type: none;
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.breadcrumb-item a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Estilo general para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina los espacios entre celdas */
+    margin: 20px 0; /* Espacio superior e inferior */
+    font-family: Arial, sans-serif;
+  }
+
+  /* Estilos para las celdas del encabezado */
+  .table th {
+    background-color: #f8f9fa; /* Color de fondo claro para el encabezado */
+    color: #495057; /* Color de texto oscuro */
+    padding: 12px 15px; /* Espaciado dentro de las celdas */
+    text-align: left; /* Alineación de texto */
+    border-bottom: 2px solid #dee2e6; /* Línea debajo del encabezado */
+  }
+
+  /* Estilos para las celdas de la tabla */
+  .table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6; /* Línea entre filas */
+  }
+
+  /* Estilo para las filas cuando pasas el mouse */
+  .table tr:hover {
+    background-color: #f1f1f1; /* Fondo gris claro */
+  }
+
+  /* Estilo para los botones */
+  .btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    font-weight: bold;
+    border: 1px solid white;
+  }
+
+  /* Estilo para el botón Editar (amarillo) */
+  .btn-warning {
+    background-color: #ffc107; /* Amarillo */
+    border: 1px solid #ffc107;
+  }
+
+  .btn-warning:hover {
+    background-color: #e0a800; /* Amarillo más oscuro al pasar el mouse */
+  }
+
+  /* Estilo para el botón Eliminar (rojo) */
+  .btn-danger {
+    background-color: #dc3545; /* Rojo */
+    border: 1px solid #dc3545;
+  }
+
+  .btn-danger:hover {
+    background-color: #c82333; /* Rojo más oscuro al pasar el mouse */
+  }
+
+  /* Estilo general para el footer */
+footer {
+    background-color: #343a40; /* Color de fondo oscuro */
+    color: white; /* Color del texto */
+    padding-top: 30px; /* Espacio superior */
+    padding-bottom: 30px; /* Espacio inferior */
+  }
+
+  /* Estilo para el texto dentro del footer */
+  footer .containerfooter {
+    text-align: center; /* Centrar el texto */
+  }
+
+  /* Estilo para el párrafo dentro del footer */
+  footer p {
+    margin: 0; /* Eliminar márgenes por defecto */
+    font-size: 14px; /* Tamaño de fuente */
+    font-family: Arial, sans-serif; /* Fuente */
+
+  }
+
+  /* Efecto de hover en el texto */
+  footer p:hover {
+    text-decoration: underline; /* Subrayar el texto al pasar el mouse */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el texto */
+  }
