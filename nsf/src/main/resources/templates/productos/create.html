@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/heroic-features.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <title>UNSAFE SHOP</title>
+</head>
+<body>
+<!-- Navbar -->
+<div th:include="administrador/template_admin.html::header"></div>
+
+
+<div class="containerShow">
+
+
+
+  <h1 class="tituloShow">Unsafe shop <small>Productos</small></h1>
+
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/administrador">Home</a></li>
+    <li class="breadcrumb-item active">/ Ver Productos</li>
+  </ol>
+
+  <h2>Crear Producto</h2>
+  <form th:action="@{/productos/save}" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" name="nombre"
+             placeholder="Ingrese el nombre del producto" autocomplete="off" required>
+    </div>
+
+    <div class="form-group">
+      <label for="descripcion">Descripción:</label>
+      <textarea class="form-control" id="descripcion" name="descripcion"
+                placeholder="Ingrese la descripción del producto" required autocomplete="off"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" class="form-control" id="cantidad" name="cantidad"
+             placeholder="Ingrese la cantidad del producto" required autocomplete="off">
+    </div>
+
+    <div class="form-group">
+      <label for="precio">Precio:</label>
+      <input type="number" class="form-control" step="any" id="precio" name="precio"
+             placeholder="Ingrese el precio del producto" autocomplete="off" required>
+    </div>
+
+    <div class="form-group">
+      <label for="img">Imagen:</label>
+      <input type="file" class="form-control-file" id="img" name="img">
+    </div>
+
+    <button type="submit" class="btn btn-success">
+      <span class="glyphicon glyphicon-saved"></span> Guardar
+    </button>
+  </form>
+
+</div>
+<!-- /.container -->
+  <div th:include="administrador/template_admin.html::footer"></div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script th:src="@{vendor/jquery/jquery.min.js}"></script>
+  <script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+<!-- Footer -->
+</body>
+
+</html>

@@ -327,3 +327,113 @@ footer {
     text-decoration: underline; /* Subrayar el texto al pasar el mouse */
     cursor: pointer; /* Cambiar el cursor al pasar sobre el texto */
   }
+
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+
+
+}
+
+/* Cambiar color y cursor al pasar el mouse sobre Admin */
+.dropbtn {
+  color: white; /* Color inicial */
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.dropbtn:hover {
+  color: #D10006;
+  cursor: pointer;
+
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+/* Dropdown oculto por defecto */
+ul li ul.dropdown {
+  width: 150px;
+  background-color: black;
+  position: absolute;
+  z-index: 999;
+  display: none;
+
+}
+
+/* Mostrar dropdown cuando el checkbox está seleccionado */
+.dropdown-checkbox:checked + label + .dropdown {
+  display: block;
+
+}
+
+/* Ocultar checkbox */
+.dropdown-checkbox {
+  display: none;
+
+}
+
+.dropdown li a:hover {
+  color: #D10006;
+  cursor: pointer;
+}
+
+
+form {
+  margin-left: 50px;
+  margin-right: 80px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+

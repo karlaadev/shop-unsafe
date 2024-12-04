@@ -6,8 +6,8 @@
     <nav class="navbar">
         <div class="container">
             <!-- Logo (lado izquierdo) -->
-            <a class="navbar-brand" href="/">
-                <img src="/Imagenes/LOGO SIN CONTORNO BLANCO (1).png" alt="Logo">
+            <a class="navbar-brand" href="/administrador">
+                <img src="/imagenes/logonsf.png" alt="Logo">
             </a>
 
             <!-- Buscador (centro) -->
@@ -20,12 +20,18 @@
 
             <!-- Íconos (lado derecho) -->
             <div class="d-flex">
-                <a class="nav-link" href="carrito.html">
-                    <i class="fas fa-shopping-cart"></i> <!-- Ícono del carrito -->
-                </a>
-                <a class="nav-link" href="login.html">
-                    <i class="fas fa-user"></i> <!-- Ícono de usuario/login -->
-                </a>
+                <ul>
+                    <li>
+                        <!-- Checkbox oculto para controlar el dropdown -->
+                        <input type="checkbox" id="admin-toggle" class="dropdown-checkbox">
+                        <!-- Label que actúa como botón -->
+                        <label for="admin-toggle" class="dropbtn">Admin ▼ </label>
+                        <!-- Menú desplegable -->
+                        <ul class="dropdown">
+                            <li><a href="/productos">Producto</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

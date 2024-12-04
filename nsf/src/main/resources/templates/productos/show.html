@@ -11,19 +11,19 @@
 <!-- Navbar -->
 <div th:include="administrador/template_admin.html::header"></div>
 
-<!-- Page Content -->
+
 <div class="containerShow">
 
 
-  <!-- Page Heading/Breadcrumbs -->
+
   <h1 class="tituloShow">Unsafe shop <small>Productos</small></h1>
 
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="/administrador">Home</a></li>
     <li class="breadcrumb-item active">/ Ver Productos</li>
   </ol>
 
-  <a class="btn btn-primary" href="#" > Crear Producto</a>
+  <a class="btn btn-primary" href="/productos/create" > Crear Producto</a>
   <h2>Productos</h2>
   <table class="table">
     <thead>
