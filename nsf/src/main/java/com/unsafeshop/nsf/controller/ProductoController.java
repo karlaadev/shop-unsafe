@@ -6,6 +6,7 @@ import com.unsafeshop.nsf.model.Usuario;
 import com.unsafeshop.nsf.service.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +25,8 @@ public class ProductoController {
 
 
     @GetMapping("")
-    public String show(){
+    public String show(Model model){
+        model.addAttribute("productos",productoService.findAll());
         return "productos/show";
     }
 
